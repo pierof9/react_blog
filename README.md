@@ -1,3 +1,8 @@
-# REACT APP BLOG
+# APP BLOG
 
-## Title
+## Frontend
+The frontend made in react.js
+
+
+## Backend
+...
