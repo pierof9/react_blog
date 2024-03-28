@@ -99,3 +99,46 @@ body {
 .column:hover .image-title {
   display: block;
 }
+
+
+/** NAVBAR POST **/
+.post-row {
+  background-color: #f0ead2;
+  padding: 15px;
+  text-align: center;
+}
+
+.navbar-post {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar-post a {
+  text-decoration: none;
+  color: #6c584c;
+  font-size: 18px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-post a:hover {
+  color: #a98467;
+}
+
+.navbar-post a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #a98467;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.navbar-post a:hover::after,
+.navbar-post a.active::after {
+  width: 100%;
+}
