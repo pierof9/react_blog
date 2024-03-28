@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+body {
+  font-family: 'Dancing Script', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+.topbar {
+  background-color: #f0ead2;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: auto;
+  color: #6c584c;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #6c584c;
+  font-size: 18px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #a98467;
+}
+
+.navbar a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #a98467;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after,
+.navbar a.active::after {
+  width: 100%;
+}
+
+.pre-row h2 {
+  font-size: 24px;
+}
+
+.main-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.column {
+  flex: 1;
+  max-width: 300px;
+  position: relative;
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.column:hover img {
+  opacity: 0.8;
+}
+
+.image-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+  z-index: 1;
+}
+
+.column:hover .image-title {
+  display: block;
+}
