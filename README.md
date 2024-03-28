@@ -1,8 +1,20 @@
-# APP BLOG
+# Building a React blog application 
 
-## Frontend
-The frontend made in react.js
+## Introduction
+In this project, you will build a Blog in React ...
 
+## Getting Started
+Before you build the app, you will need to  ...
+***YOUR WORKING ENVIRONMENT HERE***
 
-## Backend
-...
+## Dependencies
+The following dependencies ...
+***YOUR DEPENDENCIES HERE***
+
+## Instructions
+Once you've collected your dependencies, ..
+***YOUR INSTRUCTIONS HERE***
+
+## Output
+***YOUR EXPECTED OUTPUT HERE***
+
