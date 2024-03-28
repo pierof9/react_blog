@@ -142,3 +142,54 @@ body {
 .navbar-post a.active::after {
   width: 100%;
 }
+
+/** POST CONTENTS **/
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.left-column {
+  flex: 1;
+}
+
+.left-column img {
+  width: 100%;
+  height: auto;
+}
+
+.right-column {
+  flex: 2;
+  padding-left: 20px; /* Add some spacing between columns */
+}
+
+.date {
+  font-size: 14px;
+  color: #888;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.recipe-text {
+  margin-top: 20px;
+  line-height: 1.6;
+  max-height: calc(100% - 20px); /* Set max height based on left column */
+  overflow: hidden;
+}
+
+.continue-reading {
+  margin-top: 10px;
+  color: #007bff; /* Link color */
+  cursor: pointer;
+}
+
+.continue-reading:hover {
+  text-decoration: underline; /* Underline on hover */
+}
